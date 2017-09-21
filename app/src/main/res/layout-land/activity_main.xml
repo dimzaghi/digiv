@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.ditestudio.digivpro.MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/whoWeAreButton"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:padding="3dp"
+                app:srcCompat="@drawable/digiv_title_land" />
+
+            <ImageButton
+                android:id="@+id/whoWeAreButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="25dp"
+                android:layout_toLeftOf="@+id/ourEventsButton"
+                android:layout_toStartOf="@+id/ourEventsButton"
+                android:background="#00000000"
+                app:srcCompat="@drawable/who_we_are_hz" />
+
+            <ImageButton
+                android:id="@+id/ourEventsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/whoWeAreButton"
+                android:layout_toEndOf="@+id/imageView2"
+                android:layout_toRightOf="@+id/imageView2"
+                android:background="#00000000"
+                android:paddingBottom="3dp"
+                android:paddingLeft="3dp"
+                app:srcCompat="@drawable/our_events_hz" />
+
+            <ImageButton
+                android:id="@+id/ourStoryButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ourEventsButton"
+                android:layout_toEndOf="@+id/imageView2"
+                android:layout_toRightOf="@+id/imageView2"
+                android:background="#00000000"
+                app:srcCompat="@drawable/our_story_hz" />
+
+            <ImageButton
+                android:id="@+id/arBoothButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/guestBookButton"
+                android:layout_toEndOf="@+id/ourStoryButton"
+                android:layout_toRightOf="@+id/ourStoryButton"
+                android:background="#00000000"
+                android:padding="4dp"
+                app:srcCompat="@drawable/ar_booth_land" />
+
+            <ImageButton
+                android:id="@+id/guestBookButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/mapsButton"
+                android:layout_alignLeft="@+id/mapsButton"
+                android:layout_alignStart="@+id/mapsButton"
+                android:background="#00000000"
+                android:paddingLeft="3dp"
+                app:srcCompat="@drawable/share_story_land" />
+
+            <ImageButton
+                android:id="@+id/mapsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="18dp"
+                android:layout_toEndOf="@+id/ourEventsButton"
+                android:layout_toRightOf="@+id/ourEventsButton"
+                android:background="#00000000"
+                android:padding="3dp"
+                app:srcCompat="@drawable/maps_hz" />
+
+            <ImageButton
+                android:id="@+id/quitApp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/arBoothButton"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toEndOf="@+id/ourEventsButton"
+                android:layout_toRightOf="@+id/ourEventsButton"
+                android:background="#00000000"
+                app:srcCompat="@drawable/quit_app" />
+
+        </RelativeLayout>
+
+    </HorizontalScrollView>
+
+</android.support.constraint.ConstraintLayout>

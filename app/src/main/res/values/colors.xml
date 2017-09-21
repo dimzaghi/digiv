@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1a1a1a</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorDigiv">#568BAF</color>
+    <color name="colorDigivDark">#34688B</color>
+    <color name="colorBride">#DE87C5</color>
+    <color name="colorBrideDark">#A81E80</color>
+</resources>

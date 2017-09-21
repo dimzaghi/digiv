@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.ditestudio.digivpro.ourEvents">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/relative1"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <ImageView
+            android:id="@+id/imageCake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            app:srcCompat="@drawable/cake"
+            android:layout_alignTop="@+id/backButton"
+            android:layout_toLeftOf="@+id/imageLogo"
+            android:layout_toStartOf="@+id/imageLogo" />
+
+        <ImageView
+            android:id="@+id/imageLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="3dp"
+            app:srcCompat="@drawable/digiv_top_logo"
+            android:layout_alignTop="@+id/imageCake"
+            android:layout_toLeftOf="@+id/imageHearts"
+            android:layout_toStartOf="@+id/imageHearts" />
+
+        <ImageView
+            android:id="@+id/imageHearts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageLogo"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            app:srcCompat="@drawable/hearts" />
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:background="#00000000"
+            app:srcCompat="@drawable/back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="27dp" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/bg_title_v"
+            android:layout_below="@+id/imageCake"
+            android:layout_alignRight="@+id/textView7"
+            android:layout_alignEnd="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView13"
+            android:layout_alignEnd="@+id/imageHearts"
+            android:layout_alignRight="@+id/imageHearts"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:text="Our Events"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="72px"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="111dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginStart="111dp"
+            android:layout_marginTop="229dp"
+            app:srcCompat="@drawable/bg_loc" />
+
+        <TextView
+            android:id="@+id/tempatText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tempatText"
+            android:layout_alignBottom="@+id/tempatText"
+            android:layout_toEndOf="@+id/tempatText"
+            android:layout_toRightOf="@+id/tempatText"
+            android:text="23 September 2017"
+            android:textAllCaps="true"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tempatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/backButton"
+            android:layout_alignStart="@+id/backButton"
+            android:layout_below="@+id/imageView13"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="23dp"
+            android:text="TANGGAL: "
+            android:textAllCaps="true"
+            android:textColor="@color/colorDigivDark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/alamatText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tempatText1"
+            android:layout_marginTop="28dp"
+            android:layout_toRightOf="@+id/tempatText"
+            android:maxWidth="200dp"
+            android:text="AKAD DAN RESEPSI - Harmoni Yasmin Bogor"
+            android:textAllCaps="true"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/alamatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/alamatText1"
+            android:layout_alignBottom="@+id/alamatText1"
+            android:layout_alignLeft="@+id/tempatText"
+            android:layout_alignStart="@+id/tempatText"
+            android:layout_toLeftOf="@+id/alamatText1"
+            android:text="TEMPAT:"
+            android:textAllCaps="true"
+            android:textColor="@color/colorDigivDark"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jamText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="12.00 s/d 14.00"
+            android:textAllCaps="true"
+            android:textColor="#000000"
+            android:layout_below="@+id/alamatText1"
+            android:layout_alignLeft="@+id/alamatText1"
+            android:layout_alignStart="@+id/alamatText1" />
+
+        <TextView
+            android:id="@+id/jamText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/jamText1"
+            android:layout_alignBottom="@+id/jamText1"
+            android:layout_toLeftOf="@+id/jamText1"
+            android:layout_toStartOf="@+id/jamText1"
+            android:text="JAM : "
+            android:textAllCaps="true"
+            android:textColor="@color/colorDigivDark"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
